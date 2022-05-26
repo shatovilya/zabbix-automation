@@ -1,5 +1,6 @@
 # settings.py
 # importing the load_dotenv from the python-dotenv module
+from tokenize import group
 from dotenv import load_dotenv
 
 # using existing module to specify location of the .env file
@@ -15,3 +16,9 @@ load_dotenv(dotenv_path=env_path)
 ZabbixAPI_URL = os.getenv("ZabbixAPI_URL")
 Zabbix_Login = os.getenv("Zabbix_Login")
 Zabbix_Password = os.getenv("Zabbix_Password")
+
+Services_tag=os.getenv("Services_tag")
+alert_tag=os.getenv("alert_tag")
+Location_tag=os.getenv("Location_tag")
+
+group=os.getenv("group")
